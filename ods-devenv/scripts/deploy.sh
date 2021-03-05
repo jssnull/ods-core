@@ -249,7 +249,7 @@ function setup_vpn() {
     sudo yum update -y
     pushd "${HOME}/tmp"
     echo "Retrieve and install OpenVPN"
-    curl -sSLO https://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/o/openvpn-2.4.9-1.el7.x86_64.rpm
+    curl -sSLO https://www.alcancelibre.org/al/server/7/x86_64/openvpn-2.4.9-1.el7.x86_64.rpm
     sudo yum -y --nogpgcheck localinstall openvpn-2.4.9-1.el7.x86_64.rpm
     echo "Retrieve and install easy-rsa"
     curl -sSLO https://github.com/OpenVPN/easy-rsa-old/archive/2.3.3.tar.gz
